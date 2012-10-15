@@ -1,0 +1,285 @@
+@import "compass/css3/font-face";
+$icoMoonFontPath: "icomoon-combined" !default;
+
+// set font_dir in config.rb
+@include font-face (
+	'IcoMoonCombined',
+    font-files(
+        "#{$icoMoonFontPath}.woff", woff,
+        "#{$icoMoonFontPath}.ttf", truetype,
+        "#{$icoMoonFontPath}.svg#icomoon-combined", svg),
+    	"#{$icoMoonFontPath}.eot",	
+    normal,
+    normal);
+
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icomoon-icon-"]:before, [class*=" icomoon-icon-"]:before {
+	font-family: 'IcoMoonCombined';
+	font-style: normal;
+	speak: none;
+}
+.icomoon-icon-calculate:before {
+	content: "\21";
+}
+.icomoon-icon-history:before {
+	content: "\22";
+}
+.icomoon-icon-mobile:before {
+	content: "\23";
+}
+.icomoon-icon-tablet:before {
+	content: "\24";
+}
+.icomoon-icon-pie:before {
+	content: "\25";
+}
+.icomoon-icon-bars:before {
+	content: "\26";
+}
+.icomoon-icon-stats-up:before {
+	content: "\27";
+}
+.icomoon-icon-cube:before {
+	content: "\28";
+}
+.icomoon-icon-cube-2:before {
+	content: "\29";
+}
+.icomoon-icon-puzzle:before {
+	content: "\2a";
+}
+.icomoon-icon-target:before {
+	content: "\2b";
+}
+.icomoon-icon-tree-view:before {
+	content: "\2c";
+}
+.icomoon-icon-link:before {
+	content: "\2d";
+}
+.icomoon-icon-link-2:before {
+	content: "\2e";
+}
+.icomoon-icon-eye:before {
+	content: "\2f";
+}
+.icomoon-icon-eye-2:before {
+	content: "\30";
+}
+.icomoon-icon-star:before {
+	content: "\31";
+}
+.icomoon-icon-star-2:before {
+	content: "\32";
+}
+.icomoon-icon-star-3:before {
+	content: "\33";
+}
+.icomoon-icon-arrow-up:before {
+	content: "\34";
+}
+.icomoon-icon-arrow-right:before {
+	content: "\35";
+}
+.icomoon-icon-arrow-down:before {
+	content: "\36";
+}
+.icomoon-icon-arrow-left:before {
+	content: "\37";
+}
+.icomoon-icon-arrow-up-left:before {
+	content: "\38";
+}
+.icomoon-icon-arrow-up-2:before {
+	content: "\39";
+}
+.icomoon-icon-arrow-up-right:before {
+	content: "\3a";
+}
+.icomoon-icon-arrow-right-2:before {
+	content: "\3b";
+}
+.icomoon-icon-arrow-down-right:before {
+	content: "\3c";
+}
+.icomoon-icon-arrow-down-2:before {
+	content: "\3d";
+}
+.icomoon-icon-arrow-down-left:before {
+	content: "\3e";
+}
+.icomoon-icon-arrow-left-2:before {
+	content: "\3f";
+}
+.icomoon-icon-arrow-up-left-2:before {
+	content: "\40";
+}
+.icomoon-icon-arrow-up-3:before {
+	content: "\41";
+}
+.icomoon-icon-arrow-up-right-2:before {
+	content: "\42";
+}
+.icomoon-icon-arrow-right-3:before {
+	content: "\43";
+}
+.icomoon-icon-arrow-down-right-2:before {
+	content: "\44";
+}
+.icomoon-icon-arrow-down-3:before {
+	content: "\45";
+}
+.icomoon-icon-arrow-down-left-2:before {
+	content: "\46";
+}
+.icomoon-icon-arrow-left-3:before {
+	content: "\47";
+}
+.icomoon-icon-checkbox:before {
+	content: "\48";
+}
+.icomoon-icon-checkbox-unchecked:before {
+	content: "\49";
+}
+.icomoon-icon-checkbox-partial:before {
+	content: "\4a";
+}
+.icomoon-icon-radio-checked:before {
+	content: "\4b";
+}
+.icomoon-icon-radio-unchecked:before {
+	content: "\4c";
+}
+.icomoon-icon-apple:before {
+	content: "\4d";
+}
+.icomoon-icon-windows:before {
+	content: "\4e";
+}
+.icomoon-icon-file-word:before {
+	content: "\4f";
+}
+.icomoon-icon-file-excel:before {
+	content: "\50";
+}
+.icomoon-icon-file-powerpoint:before {
+	content: "\51";
+}
+.icomoon-icon-file-zip:before {
+	content: "\52";
+}
+.icomoon-icon-file-xml:before {
+	content: "\53";
+}
+.icomoon-icon-chrome:before {
+	content: "\54";
+}
+.icomoon-icon-firefox:before {
+	content: "\55";
+}
+.icomoon-icon-IE:before {
+	content: "\56";
+}
+.icomoon-icon-opera:before {
+	content: "\57";
+}
+.icomoon-icon-safari:before {
+	content: "\58";
+}
+.icomoon-icon-IcoMoon:before {
+	content: "\59";
+}
+.icomoon-icon-map:before {
+	content: "\5a";
+}
+.icomoon-icon-list:before {
+	content: "\5b";
+}
+.icomoon-icon-add:before {
+	content: "\5c";
+}
+.icomoon-icon-upload:before {
+	content: "\5d";
+}
+.icomoon-icon-cloud:before {
+	content: "\5e";
+}
+.icomoon-icon-battery:before {
+	content: "\5f";
+}
+.icomoon-icon-battery-2:before {
+	content: "\60";
+}
+.icomoon-icon-battery-3:before {
+	content: "\61";
+}
+.icomoon-icon-battery-4:before {
+	content: "\62";
+}
+.icomoon-icon-history-2:before {
+	content: "\63";
+}
+.icomoon-icon-sun:before {
+	content: "\64";
+}
+.icomoon-icon-sun-2:before {
+	content: "\65";
+}
+.icomoon-icon-light-bulb:before {
+	content: "\66";
+}
+.icomoon-icon-keyboard:before {
+	content: "\67";
+}
+.icomoon-icon-grid:before {
+	content: "\68";
+}
+.icomoon-icon-stats:before {
+	content: "\69";
+}
+.icomoon-icon-code:before {
+	content: "\6a";
+}
+.icomoon-icon-stats-2:before {
+	content: "\6b";
+}
+.icomoon-icon-stats-3:before {
+	content: "\6c";
+}
+.icomoon-icon-reload:before {
+	content: "\6d";
+}
+.icomoon-icon-paper-plane:before {
+	content: "\6e";
+}
+.icomoon-icon-users:before {
+	content: "\e029";
+}
+.icomoon-icon-user:before {
+	content: "\e028";
+}
+.icomoon-icon-infinity:before {
+	content: "\e02f";
+}
+.icomoon-icon-refresh:before {
+	content: "\e000";
+}
+.icomoon-icon-redo:before {
+	content: "\e001";
+}
+.icomoon-icon-undo:before {
+	content: "\e002";
+}
+.icomoon-icon-rainbow:before {
+	content: "\e003";
+}
+.icomoon-icon-globe:before {
+	content: "\e004";
+}
+.icomoon-icon-timer:before {
+	content: "\e005";
+}
+.icomoon-icon-lamp:before {
+	content: "\e006";
+}

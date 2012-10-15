@@ -1,0 +1,82 @@
+@import "compass/css3/font-face";
+
+// set font_dir in config.rb
+$fontSelectionArrowsPath: "selection-arrows" !default;
+
+@include font-face(
+    'SelectionArrows',
+    font-files(
+        "#{$fontSelectionArrowsPath}.woff", woff,
+        "#{$fontSelectionArrowsPath}.ttf", truetype,
+        "#{$fontSelectionArrowsPath}.svg#FontAwesomeRegular", svg),
+    '#{$fontSelectionArrowsPath}.eot',
+    normal,
+    normal);
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-selection-icon]:before {
+  font-family: 'SelectionArrows';
+  content: attr(data-icon);
+  speak: none;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="selection-icon-"]:before, [class*=" selection-icon-"]:before {
+  font-family: 'SelectionArrows';
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  text-decoration: inherit;
+}
+
+li {
+  [class^="selection-icon-"],
+  [class*=" selection-icon-"] {
+    display: inline-block;
+    width: 1.25em;
+    text-align: center;
+  }
+  .icon-large:before,
+  .icon-large:before {
+    /* 1.5 increased font size for icon-large * 1.25 width */
+    width: 1.5*1.25em;
+  }
+}
+
+.selection-icon-template:before {
+  content: "\21";
+}
+.selection-icon-data-cap:before {
+  content: "\23";
+}
+.selection-icon-chart:before {
+  content: "\e000";
+}
+.selection-icon-right-arrow-selection:before {
+  content: "\e001";
+}
+.selection-icon-down-arrow-selection:before {
+  content: "\e002";
+}
+.selection-icon-left-arrow-selection:before {
+  content: "\e003";
+}
+.selection-icon-up-arrow-selection:before {
+  content: "\e004";
+}
+.selection-icon-chat:before {
+  content: "\e005";
+}
+.selection-icon-comments:before {
+  content: "\e006";
+}
+.selection-icon-comments-2:before {
+  content: "\e007";
+}
+.selection-icon-data-cap-large:before {
+  content: "\22";
+}
+.selection-icon-database:before {
+  content: "\24";
+}
